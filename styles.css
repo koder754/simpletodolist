@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color, #f4f4f4);
+    color: var(--text-color, #333);
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--container-bg, white);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-bg, #007BFF);
+    color: var(--button-text, white);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--button-hover, #0056b3);
+}
+
+/* Task Form */
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input, form select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Filters */
+#filters button {
+    margin: 5px 5px 10px 0;
+}
+
+/* Task List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+li span.category {
+    font-size: 0.9em;
+    padding: 3px 8px;
+    border-radius: 5px;
+    background-color: #ddd;
+    color: #555;
+}
+
+/* Dark Theme */
+body.dark {
+    --bg-color: #121212;
+    --text-color: #f4f4f4;
+    --container-bg: #1e1e1e;
+    --button-bg: #444;
+    --button-hover: #333;
+    --button-text: white;
+}
